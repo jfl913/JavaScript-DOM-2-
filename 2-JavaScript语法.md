@@ -137,3 +137,28 @@ function name(arguments) {
 可以定义多个参数，只要用逗号分隔开就行。
 
 #### 2.7 对象
+
+对象就是由一些属性和方法组合在一起构成的一个数据实体。
+
+在Javascript里，属性和方法都使用“点”语法来访问。
+
+``` javascript
+Object.property
+Object.method()
+```
+
+为对象创建一个实例，需要使用`new`关键字。
+
+`var jeremy = new Person;`
+
+Javascript预先定义好的对象称为內建对象（native object）。
+
+##### 2.7.1 内建对象
+
+数组就是内建对象。
+
+##### 2.7.2 宿主对象
+
+由JavaScript的运行环境提供的预先定义好的对象。
+
+具体到Web应用，环境就是浏览器，由浏览器提供的预定义对象被称为宿主对象（host object）。比如Form、Image和Element。
