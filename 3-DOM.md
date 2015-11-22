@@ -28,5 +28,31 @@ DOM的原子是元素节点。
 
 在XHTML文档里，文本节点总是被包含在元素节点的内部。但并非所有的元素节点都包含有文本节点。
 
-#### 属性节点
+#### 3.4.3 属性节点
+
+属性节点用来对元素做出更具体的描述。
+
+<p title="a gentle reminder">Don't forget to buy this stuff.</p>
+
+`title="a gentle reminder"`是一个属性节点。
+
+ ![屏幕快照 2015-11-22 23.23.56](/Users/junfengli/Documents/JavaScript-DOM-2-/images/屏幕快照 2015-11-22 23.23.56.png)
+
+属性总是被放在起始标签里，所以属性节点总是被包含在元素节点中。
+
+并非所有的元素都包含着属性，但所有的属性都被元素包含着。
+
+#### 3.4.4 CSS（层叠样式表）
+
+告诉浏览器应该如何显示一份文档。
+
+类似JavaScript脚本，对样式的声明即可以嵌在文档的<head>部分（<style>标签之间），也可以放在另外一个样式表文件里。
+
+CSS声明元素样式语法：
+
+``` css
+selector {
+  property: value;
+}
+```
 
