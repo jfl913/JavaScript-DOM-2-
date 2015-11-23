@@ -1,3 +1,5 @@
+
+
 ### 3.1 文档：DOM中的『D』
 
 当创建了一个网页并把它加载到Web浏览器中时，DOM就在幕后悄然而生了。它把你编写的网页文档转换为一个文档对象。
@@ -56,3 +58,70 @@ selector {
 }
 ```
 
+在样式声明里，可以定义浏览器在显示元素时使用的颜色、字体和字号。
+
+``` css
+p {
+  color: yellow;
+  font-family: "arial", sans-serif;
+  font-size: 1.2em;
+}
+```
+
+继承是CSS技术中的一项强大功能。类似于DOM，CSS也把文档的内容视为一颗节点树。节点树上的各个元素将继承其父元素的样式属性。
+
+为了把某一个或某几个元素与其他元素区别开来，需要使用class属性或id属性。
+
+1. class属性
+   
+   可以在所有的元素上任意应用class属性。
+   
+   ``` css
+   <p class="special">This paragraph has the special class</p>
+   <h2 class="special">So does this headline</h2>
+   ```
+   
+   在样式表里，可以为class属性值相同的所有元素定义同一种样式。
+   
+   ``` css
+   .special {
+   	font-style: italic;
+   }
+   ```
+   
+   利用class属性为特定类型的元素定义特定的样式
+   
+   ``` css
+   h2.special {
+     text-transform: uppercase;
+   }
+   ```
+   
+2. id属性
+   
+   给网页里的某个元素加上独一无二的标志符。
+   
+   `<ul id="purchases">`
+   
+   为特定id属性值的元素定义一种独享的样式。
+   
+   ``` css
+   #purchase {
+     border: 1px solid white;
+     background-color: #333;
+     color: #ccc;
+     padding: 1em;
+   }
+   ```
+   
+   id本身只能使用一次，但可以利用id属性为包含在该特定元素里的其他元素定义样式。
+   
+   ``` css
+   #purchases li {
+     font-weight: bold;
+   }
+   ```
+   
+   id属性就像一个挂钩，一头连着文档里的某个元素，另一头连着CSS样式表里的某个样式。DOM也可以使用这种挂钩。
+
+#### 3.4.5 获取元素
