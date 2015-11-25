@@ -140,4 +140,16 @@ p {
    
    利用DOM提供的方法可以得到任何对象。不必为每个元素都定义id。
    
-2. getElementByTagName
+2. getElementsByTagName
+   
+   返回一个对象数组。
+   
+   允许把一个通配符作为它的参数。必须放在引号里，这是为了与乘法操作符有所区别。
+   
+   想知道某份文档里的元素节点个数，可以这样做：
+   
+   `alert(document.getElementsByTagName("*").length);`
+   
+3. getElementsByClassName
+   
+   ​
