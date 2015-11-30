@@ -152,4 +152,22 @@ p {
    
 3. getElementsByClassName
    
-   ​
+   通过class属性中的类名来访问元素。
+   
+   `document.getElementsByClassName("sale")`
+   
+   使用这个方法可以查找带有多个类名的元素。要指定多个类名，只要在字符串参数中用空格隔开即可。
+   
+   `document.getElementsByClassName("sale important")`
+
+### 3.5 获取和设置属性
+
+#### 3.5.1 getAttribute
+
+不属于document对象。不能通过document对象调用。
+
+获取属性。
+
+只能通过元素节点对象调用。
+
+#### 3.5.2 setAttribute
